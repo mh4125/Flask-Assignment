@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/app.css')}}">
+    <title>About Michaela</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+        <h1>About {{ aboutName }}</h1>
+        <p>My name is Michaela, and I'm a senior cybersecurity major.</p>
+        <p>I am taking this class because it is required for my Web Development certificate. I originally started this certificate when I was a junior in high school but then changed to full-time core classes and am now completing it. </p>
+        <p>I'm usually at the gym, work, or home when I am not in class. I enjoy listening to music and watching my comfort shows.</p>
+        <p>In the future, I hope to work in Project Management. I have completed the Google Project Management certificate and obtained an "Introduction to Project Management" certificate from the Project Management Institute. </p>
+    {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>
